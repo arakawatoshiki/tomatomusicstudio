@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  width: 120px;
+  text-align: center;
+  line-height: 64px;
+  display: block;
+}
+
+nav a:hover{
+  background: silver;
+}
+
+.design{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text{
+  text-align: center;
+}
+
+.btn{
+  background: skyblue;
+  border-radius: 4px;
+  width:150px;
+  padding:6px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
