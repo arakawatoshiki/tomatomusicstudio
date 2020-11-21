@@ -1,5 +1,5 @@
 # フォントの埋め込み
-HTMLの<head>に以下を記述。
+HTMLの\<head>に以下を記述。
 ```HTML
 <script>
   (function(d) {
