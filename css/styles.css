@@ -1,6 +1,6 @@
 html{
   /* background: hsl(60, 750%, 90%); */
-  color: hsl(0, 0%, 30%);
+  color: #4d4d4d;
 }
 
 /* 左上アイコン */
@@ -13,11 +13,14 @@ header {
 
 header a {
   text-decoration: none;
-  color: hsl(0, 0%, 30%);
+  color: #4d4d4d;
 }
 header .logo_title{
   margin: 0 0 0 auto;
   font-size: 50px;
+  font-family: josefin-slab,sans-serif;
+  font-weight: 600;
+  font-style: normal;
   
 }
 
@@ -25,10 +28,11 @@ header .logo_subtitle {
   margin: 0 auto;
   font-size: 20px;
   position: relative;
-  top: -20px;
+  top: -10px;
+  font-family: mrs-waves, serif;
+  font-weight: 400;
 
 }
-
 
 
 /* メニューバー */
@@ -56,18 +60,24 @@ nav a {
 
 nav a:hover{
   color: hsl(0, 0%, 100%);
-  /* text-shadow: -1px -2px   hsl(0, 0%, 30%); */
-  text-shadow:0 0 10px hsl(0, 0%, 30%);
+  /* text-shadow: -1px -2px   #4d4d4d; */
+  text-shadow:0 0 10px #4d4d4d;
 }
 
 .link {
   margin: 10px auto 0;
   font-size: 20px;
+  font-family: a-otf-midashi-mi-ma31-pr6n,serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .rubi {
   margin: 0 auto;
   font-size: 5px;
+  font-family: josefin-slab,serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* タイトル横線 */
@@ -75,10 +85,13 @@ nav a:hover{
   display: flex;
   align-items: center;
   margin: 40px auto 40px auto;
+  font-family: a-otf-midashi-mi-ma31-pr6n,serif;
+  font-weight: 600;
+  font-style: normal;
   }
   .title:before,
   .title:after {
-  border-top: 1px solid hsl(0, 0%, 30%);
+  border-top: 1px solid #4d4d4d;
   content: "";
   flex-grow: 1;
   }
@@ -107,11 +120,17 @@ nav a:hover{
 .shiro_title {
   font-size: 50px;
   margin: 0px auto 0px auto;
+  font-family: josefin-slab,serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .shiro_text {
   font-size: 20px;
   margin: 0 auto 100px auto;
+  font-family: mrs-eaves,serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* デザイナー */
@@ -129,11 +148,17 @@ nav a:hover{
 .foou_rubi {
   margin: 20px auto 0 auto;
   font-size: 15px;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .foou_name {
   margin: 0 auto 30px auto;
   font-size: 30px;
+  font-family: josefin-sans,sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* デザイン事例 */
@@ -149,9 +174,24 @@ nav a:hover{
 }
 
 
-h2 {
+.hidaji_text h2 {
   font-size: 21px;
   margin: 0;
+  font-family: dnp-shuei-shogomincho-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.case_text p {
+  font-family: a-otf-midashi-mi-ma31-pr6n,serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.goods_text h2 {
+  font-family: a-otf-midashi-mi-ma31-pr6n,serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .case_img {
@@ -186,7 +226,7 @@ h2 {
 }
 
 .hidaji_img {
-  border-bottom: solid 1px hsl(0, 0%, 30%);
+  border-bottom: solid 1px #4d4d4d;
   padding-bottom: 50px;
 }
 
@@ -207,6 +247,17 @@ h2 {
   text-align: center;
 }
 
+.text h1 {
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text p {
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* ボタンの設定 */
 .btn{
@@ -218,6 +269,9 @@ h2 {
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 0 8px gray;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .btn:hover{
@@ -227,7 +281,10 @@ h2 {
 
 footer {
   text-align: center;
-  border-top: solid 1px hsl(0, 0%, 30%);
+  border-top: solid 1px #4d4d4d;
+  font-family: fot-tsukubrdgothic-std,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
