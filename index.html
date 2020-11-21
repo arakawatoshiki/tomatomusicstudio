@@ -1,53 +1,142 @@
-<!DOCTYOE html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tomatomusicstudio</title>
     <link rel="icon" href="tomato.ico">
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="description" content="tomatomusicstudioです。">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.slider').bxSlider({
+              auto: true,
+              pause: 5000,
+          });
+      });
+    </script>
+    <!-- フォント -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'ynw1ntm',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
     <header>
-      <img src="img/tomato_face.PNG" width="120" height="120" alt="とまアイコン">
-      <h1>とまと</h1>
-      <p>株式会社tomatomusicstudio代表取締役です。</p>
-      <ul>
-        <li>
-          <a href="https://twitter.com/foou_drawing" target="_blank">
-            <img src="img/twitter.png" width="20" height="20" alt="instaへのリンク画像">
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.instagram.com/foou_drawing/" target="_blank">
-            <img src="img/insta.png" width="20" height="20" alt="twitterへのリンク画像">
-          </a>
-        </li>
-      </ul>
+      <a href="index.html">
+        <p class="logo_title">Shiro</p>
+        <p class="logo_subtitle">Design & Illust Studio</p>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="">
+              <p class="link">コンセプト</p>
+              <p class="rubi">Concept</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="link">デザイナー</p>
+              <p class="rubi">Designer</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/foou_portfolio/">
+              <p class="link">ポートフォリオ</p>
+              <p class="rubi">Portfolio</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="link">サービス</p>
+              <p class="rubi">Service</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section>
-      <h1>Designs</h1>
-      <section>
-        <img src="img/sakka.PNG" width="260" height="260" alt="作家のやつ">
-        <h1>作家になるまで</h1>
-        <p>私が作家を目指しているものです。</p>
+
+    <section class="shiro">
+      <img src="img/white.png" class="logo image">
+      <p class="shiro_title">shiro</p>
+      <p class="shiro_text">- "shiro" always be here. We always don't find it through. -</p>
+    </section>
+
+    <section class="designer">
+      <div class="title">デザイナー</div>
+      <img src="img/foou.png" class="foou image">
+      <p class="foou_rubi">ふゆ</p>
+      <p class="foou_name">FooU*</p>
+      <span class="btn">詳しく</span>
+    </section>
+
+    <section class="design_case">
+      <div class="title">デザイン事例</div>
+      <div class="case">
+      <div class="case_img hidaji_img">
+        <img src="img/design.png" class="image">
+      </div>
+        <div class="case_text hidaji_text">
+          <h2>割烹バル HIDAJI</h2>
+          <p>　愛知県豊橋市に軒を構える、ネオ大衆居酒屋「割烹バル HIDAJI」周辺の飲食店とは一線を画す、シンプル且つ洗練されたデザインや画期的なコンセプトで居酒屋業界に新たな風を吹かす。<br />　Shiroでは、「割烹バル HIDAJI」のロゴ、のれん、内装、メニュー表などの包括的なデザインを担当。Shiroが目指すデザインの理想を垣間見れる。</p>
+        </div>
+      </div>
+
+      <div class="case">
+        <div class="case_img image">
+          <img src="img/bag.png">
+        </div>
+        <div class="case_text goods_text">
+          <h2>グッズデザイン</h2>
+          <p>　愛知県豊橋市に軒を構える、ネオ大衆居酒屋「割烹バル HIDAJI」周辺の飲食店とは一線を画す、シンプル且つ洗練されたデザインや画期的なコンセプトで居酒屋業界に新たな風を吹かす。<br />　Shiroでは、「割烹バル HIDAJI」のロゴ、のれん、内装、メニュー表などの包括的なデザインを担当。Shiroが目指すデザインの理想を垣間見れる。</p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="title">ご依頼</div>
+    <section class="order">
+      <section class="create_icon">
+        <img src="img/illustration.png" class="image" alt="作家のやつ">
+        <div class="text">
+          <h1>アイコン制作</h1>
+          <p>¥2000円</p>
+        </div>
+        <span class="btn">依頼する</span>
       </section>
       
-      <section>
-        <img src="img/giburi.PNG" width="260" height="260" alt="ジブリのやつ">
-        <h1>ジブリの絵です</h1>
-        <p>いろんなジブリの絵を描いていました</p>
+      <section class="design_change">
+        <img src="img/illustration.png" class="image" alt="ジブリのやつ">
+        <div class="text">
+          <h1>ロゴ制作 ¥5000円～</h1>
+          <p>¥500円～</p>
+        </div>
+        <span class="btn">依頼する</span>
       </section>
 
-      <section>
-        <img src="img/fairy.PNG" width="260" height="260" alt="妖精のやつ">
-        <h1>妖精も描いています</h1>
-        <p>妖精も描いちゃったりします。</p>
+      <section class="design_order">
+        <img src="img/illustration.png" class="image" alt="妖精のやつ">
+        <div class="text">
+          <h1>ロゴ制作 ¥5000円～</h1>
+          <p>要相談</p>
+        </div>
+        <span class="btn">依頼する</span>
       </section>
     </section>
     <footer>
       <p>(C) tomatomusicstudio</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
   
 </html>
