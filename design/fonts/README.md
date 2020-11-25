@@ -1,5 +1,5 @@
 # フォントの埋め込み
-HTMLの<head>に以下を記述。
+HTMLの\<head>に以下を記述。
 ```HTML
 <script>
   (function(d) {
@@ -61,8 +61,8 @@ font-style: normal;
 ## A-OTF リュウミン
 **追加されたフォント**
 ```css
-font-family: a-otf-midashi-mi-ma31-pr6n,serif;
-font-weight: 600;
+font-family: a-otf-ryumin-pr6n,serif;
+font-weight: 300;
 font-style: normal;
 ```
 
