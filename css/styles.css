@@ -1,14 +1,21 @@
 html{
   /* background: hsl(60, 750%, 90%); */
   color: #4d4d4d;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 0;
 }
 
 /* 左上アイコン */
 header {
-  /* position: fixed; */
-  display: flex;
+  position: fixed;
   margin-bottom: 50px;
-  margin-left: 10px;
+  
+  padding-left: 10px;
+  background: white;
+  display: flex;
 }
 
 header a {
@@ -19,28 +26,30 @@ header .logo_title{
   margin: 0 0 0 auto;
   font-size: 50px;
   font-family: josefin-slab,sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
-  
+  letter-spacing: 4px;
 }
 
 header .logo_subtitle {
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 12px;
   position: relative;
   top: -10px;
   font-family: mrs-waves, serif;
   font-weight: 400;
-
+  letter-spacing: 3px;
 }
 
 
 /* メニューバー */
 nav {
-  margin: 0 0 0 auto;
-  padding: 0 0 10px 0;
+  position: fixed;
+  right: 0;
+  padding: 0px 0 10px 0;
   border-bottom: solid 1px black;
   height: 60px;
+  
 }
 
 nav ul {
@@ -65,8 +74,8 @@ nav a:hover{
 }
 
 .link {
-  margin: 10px auto 0;
-  font-size: 20px;
+  margin: 20px auto 0 0;
+  font-size: 15px;
   font-family: a-otf-midashi-mi-ma31-pr6n,serif;
   font-weight: 600;
   font-style: normal;
@@ -74,10 +83,11 @@ nav a:hover{
 
 .rubi {
   margin: 0 auto;
-  font-size: 5px;
+  font-size: 7px;
   font-family: josefin-slab,serif;
   font-weight: 700;
   font-style: normal;
+  letter-spacing: 2px;
 }
 
 /* タイトル横線 */
@@ -88,6 +98,7 @@ nav a:hover{
   font-family: a-otf-midashi-mi-ma31-pr6n,serif;
   font-weight: 600;
   font-style: normal;
+  font-size: 20px;
   }
   .title:before,
   .title:after {
@@ -96,12 +107,12 @@ nav a:hover{
   flex-grow: 1;
   }
   .title:before {
-    margin-right: 1rem;
-    margin-left: 2rem;
+    margin-right: 18px;
+    margin-left: 24px;
   }
   .title:after {
-    margin-left: 1rem;
-    margin-right: 2rem;
+    margin-left: 18px;
+    margin-right: 24px;
   }
 
 /* shiro */
@@ -111,22 +122,23 @@ nav a:hover{
 
 .shiro img {
   border-radius: 50%;
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 100px hsl(0, 0%, 70%);
   width: 500px;
   height: 500px;
   margin: 50px auto;
 }
 
 .shiro_title {
-  font-size: 50px;
-  margin: 0px auto 0px auto;
+  font-size: 40px;
+  margin: 0px auto 5px auto;
   font-family: josefin-slab,serif;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 3px;
 }
 
 .shiro_text {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0 auto 100px auto;
   font-family: mrs-eaves,serif;
   font-weight: 400;
@@ -287,6 +299,24 @@ footer {
   font-style: normal;
 }
 
+.contact img{
+  width: 30px;
+  height: 30px;
+  color: hsl(0, 0%, 70%);
+}
+
+.twitter {
+  position: fixed;
+  right: 80px;
+  bottom: 60px;
+}
+
+.insta {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+
+}
 
 /* スマホサイズ */
 @media(max-width: 599px) {
@@ -310,12 +340,22 @@ footer {
     width: 220px;
     height: 220px;
     /* margin-left: 3%; */
-  }
-
-  .case_img {
+    
     text-align: center;
     margin: 0 auto;
+  }
+
+  .case_img img {
+    width: 220px;
+    height: 220px;
   } 
+
+  .hidaji_img img {
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin: 0 auto;
+  }
 
   .case_text {
     margin: 100px auto 0 auto; 
@@ -325,24 +365,32 @@ footer {
     text-align: left;
   }
 
-  .case:nth-of-type(odd) {
+  /* .case:nth-of-type(odd) {
     flex-direction: row-reverse;
-  }
-  .case:nth-child(odd) .case_text {
-    /* text-align: right; */
-  }
+  } */
+  /* .case:nth-child(odd) .case_text {
+    text-align: right;
+  } */
   .case:nth-of-type(odd) .case_img {
     margin: 0 auto;
     /* margin-right: 3%; */
   }
   .hidaji_img {
     border-bottom: none;
+    padding-bottom: 0px;
   }
 
-  .image {
+  .shiro img {
     width: 220px;
     height: 220px;
   }
+
+  .designer img{
+    width: 220px;
+    height: 220px;
+  }
+
+  
 
 }
 
@@ -350,5 +398,14 @@ footer {
 @media(min-width: 1020px) {
   nav ul li {
     padding: 0 40px 0;
+  }
+
+  .title:before {
+    margin-right: 36px;
+    margin-left: 48px;
+  }
+  .title:after {
+    margin-left: 36px;
+    margin-right: 48px;
   }
 }
