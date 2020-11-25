@@ -162,6 +162,7 @@ nav a:hover{
 
 .foou_rubi {
   margin: 20px auto 0 auto;
+  height: 25px;
   font-size: 15px;
   font-family: fot-tsukubrdgothic-std,sans-serif;
   font-weight: 700;
@@ -174,6 +175,7 @@ nav a:hover{
   font-family: josefin-sans,sans-serif;
   font-weight: 600;
   font-style: normal;
+  letter-spacing: 2px;
 }
 
 /* デザイン事例 */
@@ -363,6 +365,18 @@ footer {
   
 
   .menu{display: none;}
+
+  .shiro_title {
+    font-size: 20px;
+    margin: 0px auto 5px auto;
+    letter-spacing: 3px;
+  }
+  
+  .shiro_text {
+    font-size: 9px;
+    margin: 0 auto 100px auto;
+  }
+
   .order{
     display: block;
     margin: 30px auto;
@@ -408,7 +422,7 @@ footer {
   }
 
   .case:nth-child(odd) .case_text {
-    margin: 50px 10px 80px 10px;
+    margin: 50px 20px 80px 20px;
 }
   .case:nth-of-type(odd) .case_img {
     margin: 0 auto;
