@@ -352,7 +352,11 @@ footer {
   .menu{display: none;}
   
   .shiro_text {
-    font-size: 15px;
+    font-size: 13px;
+  }
+
+  .foou_rubi {
+    height: 20px;
   }
 
   .order{
