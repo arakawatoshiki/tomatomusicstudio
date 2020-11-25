@@ -421,4 +421,26 @@ footer {
     margin-left: 36px;
     margin-right: 48px;
   }
+  .case_img {
+    /* width: 100%; */
+    margin-right: 70px;
+    margin-left: 250px;
+    /* margin-left: 3%; */
+  }
+  
+  .case_text {
+    /* margin-right: 50px; */
+    margin: 0 auto 0 0;
+    width: 500px;
+  }
+
+  .case:nth-child(odd) .case_text {
+    /* text-align: right; */
+    margin: 0 0 0 auto;
+  }
+  .case:nth-of-type(odd) .case_img {
+    margin-left: 70px;
+    margin-right: 250px;
+    /* margin-right: 3%; */
+  }
 }
