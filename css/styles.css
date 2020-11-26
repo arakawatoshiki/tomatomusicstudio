@@ -46,6 +46,7 @@ header .logo_subtitle {
 
 /* メニューバー */
 .sp-menu{display: none;}
+.overlay{display: none;}
 .menu {
   position: fixed;
   right: 0;
@@ -335,7 +336,8 @@ footer {
 }
 
 /* スマホサイズ */
-@media(max-width: 599px) {
+/* 599px */
+@media(max-width: 860px) {
   header {
     height: 45px;
   }
@@ -363,7 +365,7 @@ footer {
   
   .sp-menu #open {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 48px;
     cursor: pointer;
   }
   
@@ -376,6 +378,7 @@ footer {
   }
   
   .overlay {
+    display: inline;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -396,9 +399,9 @@ footer {
   
   .overlay #close {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 32px;
+    top: 12px;
+    right: 20px;
+    font-size: 24px;
     cursor: pointer;
   }
   
@@ -430,6 +433,10 @@ footer {
   
   .overlay.show li:nth-child(3) {
     transition-delay: .3s;
+  }
+
+  .overlay.show li:nth-child(4) {
+    transition-delay: .4s;
   }
   
   .shiro_text {
