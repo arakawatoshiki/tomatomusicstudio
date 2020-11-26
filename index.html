@@ -10,20 +10,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/jquery-3.5.1.min.js"></script>
 
-    <script>
-      $(function(){
-        $(window).scroll(function (){
-            $('.effect-fade').each(function(){
-                var elemPos = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > elemPos - windowHeight){
-                    $(this).addClass('effect-scroll');
-            }
-          });
-        });
-      });
-    </script>
 
     <!-- フォント -->
     <script>
@@ -52,7 +38,7 @@
             </a>
           </li>
           <li>
-            <a href="#designer">
+            <a href="#designer" >
               <p class="link">デザイナー</p>
               <p class="rubi">Designer</p>
             </a>
@@ -86,7 +72,7 @@
                 <p class="rubi">Concept</p>
               </a>
             </li>
-            <li>
+            <li id="page">
               <a href="#designer">
                 <p class="link">デザイナー</p>
                 <p class="rubi">Designer</p>
