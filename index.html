@@ -7,17 +7,8 @@
     <link rel="icon" href="tomato.ico">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="description" content="tomatomusicstudioです。">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-          $('.slider').bxSlider({
-              auto: true,
-              pause: 5000,
-          });
-      });
-    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- フォント -->
     <script>
       (function(d) {
@@ -64,7 +55,42 @@
           </li>
         </ul>
       </nav>
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
     </header>
+    
+    <div class="overlay">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+          <ul>
+            <li>
+              <a href="">
+                <p class="link">コンセプト</p>
+                <p class="rubi">Concept</p>
+              </a>
+            </li>
+            <li>
+              <a href="#designer">
+                <p class="link">デザイナー</p>
+                <p class="rubi">Designer</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/foou_portfolio/" target="_blank">
+                <p class="link">ポートフォリオ</p>
+                <p class="rubi">Portfolio</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="link">サービス</p>
+                <p class="rubi">Service</p>
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
 
     <div class="contact">
       <a href="https://www.instagram.com/foou_drawing/" target="_blank">
