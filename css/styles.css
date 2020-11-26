@@ -6,12 +6,13 @@ html{
 
 body {
   margin-top: 0;
+  z-index: 2;
 }
 
 .effect-fade {
   opacity : 0;
-  transform : translate(0, 45px);
-  transition : all 300ms;
+  transform : translate(0, 100px);
+  transition : all 500ms;
 }
   
 .effect-fade.effect-scroll {
@@ -23,12 +24,13 @@ body {
 header {
   position: fixed;
   margin-bottom: 50px;
-  
+  padding-top: 0.4%;
   padding-left: 2%;
   width: 100%;
   height: 80px;
   background: white;
   display: flex;
+  z-index: 1;
 }
 
 header a {
@@ -327,10 +329,12 @@ footer {
   font-style: normal;
 }
 
+
 .contact img{
   width: 30px;
   height: 30px;
   color: hsl(0, 0%, 70%);
+  z-index: 1;
 }
 
 .insta {
