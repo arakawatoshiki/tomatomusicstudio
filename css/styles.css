@@ -314,10 +314,12 @@ header .logo_subtitle {
   transition: all 0.2s ease-out;
 }
 
+
 .btn:hover{
-  letter-spacing: 12px;
+  letter-spacing: 8px;
   cursor: pointer;
   text-align: center;
+  text-indent: 8px;
 }
 
 footer {
