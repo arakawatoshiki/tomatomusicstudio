@@ -8,6 +8,17 @@ body {
   margin-top: 0;
 }
 
+.effect-fade {
+  opacity : 0;
+  transform : translate(0, 45px);
+  transition : all 300ms;
+}
+  
+.effect-fade.effect-scroll {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
 /* 左上アイコン */
 header {
   position: fixed;

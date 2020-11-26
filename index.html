@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta name="description" content="tomatomusicstudioです。">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script>
+      $(function(){
+        $(window).scroll(function (){
+            $('.effect-fade').each(function(){
+                var elemPos = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > elemPos - windowHeight){
+                    $(this).addClass('effect-scroll');
+            }
+          });
+        });
+      });
+    </script>
 
     <!-- フォント -->
     <script>
@@ -108,30 +124,30 @@
     </section>
 
     <section class="designer" id="designer">
-      <div class="title">デザイナー</div>
-      <img src="img/foou.png" class="foou image">
-      <p class="foou_rubi">ふゆ</p>
-      <p class="foou_name">FooU*</p>
-      <span class="btn">詳しく</span>
+      <div class="title effect-fade">デザイナー</div>
+      <img src="img/foou.png" class="foou image effect-fade">
+      <p class="foou_rubi effect-fade">ふゆ</p>
+      <p class="foou_name effect-fade">FooU*</p>
+      <span class="btn effect-fade">詳しく</span>
     </section>
 
     <section class="design_case">
-      <div class="title">デザイン事例</div>
+      <div class="title effect-fade">デザイン事例</div>
       <div class="case">
-      <div class="case_img hidaji_img">
+      <div class="case_img hidaji_img effect-fade">
         <img src="img/design.png" class="image">
       </div>
-        <div class="case_text hidaji_text">
+        <div class="case_text hidaji_text effect-fade">
           <h2>割烹バル HIDAJI</h2>
           <p>　愛知県豊橋市に軒を構える、ネオ大衆居酒屋「割烹バル HIDAJI」周辺の飲食店とは一線を画す、シンプル且つ洗練されたデザインや画期的なコンセプトで居酒屋業界に新たな風を吹かす。<br />　Shiroでは、「割烹バル HIDAJI」のロゴ、のれん、内装、メニュー表などの包括的なデザインを担当。Shiroが目指すデザインの理想を垣間見れる。</p>
         </div>
       </div>
 
       <div class="case">
-        <div class="case_img image">
+        <div class="case_img image effect-fade">
           <img src="img/bag.png">
         </div>
-        <div class="case_text goods_text">
+        <div class="case_text goods_text effect-fade">
           <h2>グッズデザイン</h2>
           <p>　愛知県豊橋市に軒を構える、ネオ大衆居酒屋「割烹バル HIDAJI」周辺の飲食店とは一線を画す、シンプル且つ洗練されたデザインや画期的なコンセプトで居酒屋業界に新たな風を吹かす。<br />　Shiroでは、「割烹バル HIDAJI」のロゴ、のれん、内装、メニュー表などの包括的なデザインを担当。Shiroが目指すデザインの理想を垣間見れる。</p>
         </div>
@@ -139,37 +155,37 @@
     </section>
 
 
-    <div class="title">ご依頼</div>
-    <section class="order">
+    <div class="title effect-fade">ご依頼</div>
+    <section class="order ">
       <section class="create_icon">
-        <img src="img/illustration.png" class="image" alt="作家のやつ">
-        <div class="text">
+        <img src="img/illustration.png" class="image" alt="">
+        <div class="text effect-fade">
           <h1>アイコン制作</h1>
           <p>¥2000円</p>
         </div>
-        <span class="btn">依頼する</span>
+        <span class="btn effect-fade">依頼する</span>
       </section>
       
       <section class="design_change">
-        <img src="img/illustration.png" class="image" alt="ジブリのやつ">
-        <div class="text">
+        <img src="img/illustration.png" class="image effect-fade" alt="">
+        <div class="text effect-fade">
           <h1>デザイン公正</h1>
           <p>¥500円～</p>
         </div>
-        <span class="btn">依頼する</span>
+        <span class="btn effect-fade">依頼する</span>
       </section>
 
       <section class="design_order">
-        <img src="img/illustration.png" class="image" alt="妖精のやつ">
-        <div class="text">
+        <img src="img/illustration.png" class="image effect-fade" alt="">
+        <div class="text effect-fade">
           <h1>デザイン制作</h1>
           <p>要相談</p>
         </div>
-        <span class="btn">依頼する</span>
+        <span class="btn effect-fade">依頼する</span>
       </section>
     </section>
-    <footer>
-      <p>(C) tomatomusicstudio</p>
+    <footer class="effect-fade">
+      <p >(C) tomatomusicstudio</p>
     </footer>
     <script src="js/main.js"></script>
   </body>
