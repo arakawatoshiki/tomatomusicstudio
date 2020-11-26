@@ -6,7 +6,7 @@ html{
 
 body {
   margin-top: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .effect-fade {
@@ -30,7 +30,7 @@ header {
   height: 80px;
   background: white;
   display: flex;
-  z-index: 1;
+  z-index: 2;
 }
 
 header a {
@@ -86,7 +86,6 @@ header .logo_subtitle {
 
 .menu a:hover{
   color: hsl(0, 0%, 100%);
-  /* text-shadow: -1px -2px   #4d4d4d; */
   text-shadow:0 0 10px #4d4d4d;
 }
 
@@ -334,7 +333,7 @@ footer {
   width: 30px;
   height: 30px;
   color: hsl(0, 0%, 70%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .insta {
@@ -354,7 +353,7 @@ footer {
 /* 599px */
 @media(max-width: 860px) {
   header {
-    height: 45px;
+    height: 50px;
   }
   header .logo_title{
     font-size: 30px;
@@ -379,8 +378,11 @@ footer {
   }
   
   .sp-menu #open {
+    position: absolute;
     font-size: 24px;
-    line-height: 48px;
+    top: 12px;
+    right: 3.5%;
+    margin-right: 3.5%;
     cursor: pointer;
   }
   
@@ -405,6 +407,7 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: opacity .6s;
+    z-index: 2;
   }
   
   .overlay.show {
@@ -415,7 +418,7 @@ footer {
   .overlay #close {
     position: absolute;
     top: 12px;
-    right: 20px;
+    right: 3.5%;
     font-size: 24px;
     cursor: pointer;
   }
@@ -452,6 +455,16 @@ footer {
 
   .overlay.show li:nth-child(4) {
     transition-delay: .4s;
+  }
+
+  .overlay a{
+    text-decoration: none;
+    color: #4d4d4d;
+  }
+
+  .overlay a:hover{
+    color: hsl(0, 0%, 100%);
+    text-shadow:0 0 10px #4d4d4d;
   }
   
   .shiro_text {
