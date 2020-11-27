@@ -11,7 +11,7 @@ body {
 
 .effect-fade {
   opacity : 0;
-  transform : translate(0, 100px);
+  transform : translate(0, 10vh);
   transition : all 500ms;
 }
   
@@ -384,7 +384,7 @@ footer {
   
   .sp-menu #open {
     position: absolute;
-    font-size: 24px;
+    font-size: 30px;
     top: 12px;
     right: 3.5%;
     margin-right: 3.5%;
@@ -424,7 +424,7 @@ footer {
     position: absolute;
     top: 12px;
     right: 3.5%;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
   }
   
