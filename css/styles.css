@@ -71,13 +71,16 @@ header .logo_subtitle {
 
 .menu ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto 0 0;
   display: flex;
 }
 
+.menu ul li {
+  padding: 0 0.3vw;
+}
 
 .menu a {
-  width: 150px;
+  width: 140px;
   text-align: center;
   display: block;
 }
@@ -140,8 +143,8 @@ header .logo_subtitle {
 .shiro img {
   border-radius: 50%;
   box-shadow: 0 0 100px hsl(0, 0%, 70%);
-  width: 500px;
-  height: 500px;
+  width: 60vh;
+  height: 60vh;
   margin: 50px auto;
 }
 
@@ -353,7 +356,7 @@ footer {
 
 /* スマホサイズ */
 /* 599px */
-@media(max-width: 860px) {
+@media(max-width: 859px) {
   header {
     height: 50px;
   }
@@ -556,7 +559,7 @@ footer {
 /* 全画面サイズ */
 @media(min-width: 1020px) {
   .menu ul li {
-    padding: 0 1% 0 40px;
+    padding: 0 1vw 0 1vw;
   }
 
   .title:before {
